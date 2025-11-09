@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unidos - Crowdfunding</title>
+    <link href="css/home.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <div class="contenedor">
+            <a class="logo" href="index.html">
+                <img src="../resources/icon.png" alt="Unidos" class="icono-logo">
+                Unidos
+            </a>
+            <button class="menu-hamburguesa" aria-label="Menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-menu">
+                <a href="index.html">Inicio</a>
+                <a href="projects.html">Explorar</a>
+                <a href="project-detail.html">Detalle de Proyecto</a>
+                <div class="autenticacion">
+                    <a class="boton-iniciar-sesion" href="login.html">Iniciar sesión</a>
+                    <a class="boton-registrarse" href="register.html">Registrarse</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <script>
+        const menuBtn = document.querySelector('.menu-hamburguesa');
+        const navMenu = document.querySelector('.nav-menu');
+
+        menuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            menuBtn.classList.toggle('active');
+        });
+    </script>
+
+    <main>
+        <section class="heroe">
+            <h1>Impulsa tus ideas con Unidos</h1>
+            <p>Convierte tus proyectos en realidad con el apoyo de una comunidad apasionada.</p>
+            <a class="boton-primario" href="projects.html">Explorar proyectos</a>
+        </section>
+
+        <section class="categorias">
+            <h2>Categorías</h2>
+            <div class="lista-categorias">
+                <a href="#">Tecnología</a>
+                <a href="#">Arte</a>
+                <a href="#">Música</a>
+                <a href="#">Cine</a>
+                <a href="#">Juegos</a>
+                <a href="#">Diseño</a>
+            </div>
+        </section>
+
+        <section class="proyectos">
+            <h2>Proyectos populares</h2>
+            <div class="cuadricula-proyectos">
+                <div class="proyecto">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzJP_OaN4to87kUu2FPe8meDchVQyORgZ-T28stCehcVXqGFmvE-mTVtyUgGJpre2f71JnICtkSh8d1blD5V9112gzGnsLXv5Wv-tDtMX2e2JPrgBJy5tmhifpHu-pIWysuIxhXX4Ze_5qJdi0rC3AiE5zz3I7FVb4vvOcMvlZLZwT-axu15ZPi4zjfusPH_pf-ARRlbzptyNxGLVRqi9lj9wt429bsGQfRyX6r3WRVjw3dCMFvwckoFn9WUATICQ7q6av_0FfR8o" alt="Proyecto">
+                    <h3>Revolucionando el transporte eléctrico</h3>
+                    <p>Un vehículo eléctrico con tecnología avanzada y diseño sostenible.</p>
+                </div>
+                <div class="proyecto">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzM7EmOuOZJTZCaBZZ_AEE3But3dNWKfYqjWo-971QKlT_wu3DeD9ycsopNL_YZ4fYB2xT4YPYC-DQ3n105blUfow4c3UgfYP8AWkyEr_7Gqg9Ce2kSeCX2nrMQ8T81hocot9czZiYkeI06dmsAjM85zFkUXNsK1jS0GNnDbG9zfPhQmOsbDmqr2KmeeOv5atwSZcgYALHQyrzCqJPiAEDnSkMgoR2DyyOEA87W6aJftW4QGsdpLtBQ8YAvPIuT3nxzoCUcpBWD-U" alt="Proyecto">
+                    <h3>Hogar inteligente y eficiente</h3>
+                    <p>Dispositivos inteligentes para un hogar conectado y eficiente.</p>
+                </div>
+                <div class="proyecto">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5prkPO57kwPSnENj4Cclg7a5CXn3FTZl9lrizLuJJKAof-KFImbFP86jOqXrj2cX181dWwxRyO-j_2ByhYpXPwvTKRHoM9Zotqlwwcbp5STTzu1v_PBtmZWJX34UfixLNgAO-Px8INTZx0ngS_3gCy7q8sEJgI9LuQWWfXE10T4Vp_htu1i4yj6QtzFRwohDme7oNeKpk3elRJBwhgvoq32L3Utk-VbNa6bHKLh-SkyPaIeeY-67vITZvIKzrDQ32AOa6Ll5gRt4" alt="Proyecto">
+                    <h3>Cortometraje independiente</h3>
+                    <p>Apoya la creación de un cortometraje con un mensaje inspirador.</p>
+                </div>
+                <div class="proyecto">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPOO4oI1sryW_gwxwtpO2BDp8PMNqtplgKCiA4aCRlC_ddvA91AxdgHRH8RBx1w7kEGZLORNp44ntLS-myPKWNLOm3_KWwZbdCIvQKNgVyoEJ7XYusJIUoQLA8JBVVHJsoXNm9R_NYjoPJfE2om9Q8TxeHP3RQigCghLFYSKEUL30wBM9t3fDS2MmtBaWej-hvbJqk9MhxhKcDOjP6uUwvnyx9EoELwfGaivy3okMzzzLyZkNUESpNublaDwa6egaX4sTtGRZecpo" alt="Proyecto">
+                    <h3>Juego de mesa estratégico</h3>
+                    <p>Un juego de mesa que combina estrategia y diversión.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <h2>Preguntas frecuentes</h2>
+            <details>
+                <summary>¿Cómo funciona Unidos?</summary>
+                <p>Unidos te permite publicar tu proyecto y recibir financiación de personas de todo el mundo que creen en tu idea.</p>
+            </details>
+            <details>
+                <summary>¿Qué tipo de proyectos puedo financiar?</summary>
+                <p>Puedes encontrar proyectos de todo tipo: desde tecnología y juegos hasta arte y cine.</p>
+            </details>
+            <details>
+                <summary>¿Cómo puedo crear mi propio proyecto?</summary>
+                <p>Es muy sencillo. Solo tienes que registrarte, hacer clic en "Crear un proyecto", y seguir los pasos.</p>
+            </details>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contenedor">
+            <div class="enlaces-pie">
+                <a href="#">Acerca de</a>
+                <a href="#">Ayuda</a>
+                <a href="#">Términos</a>
+                <a href="#">Privacidad</a>
+            </div>
+            <p>© 2024 Unidos. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
