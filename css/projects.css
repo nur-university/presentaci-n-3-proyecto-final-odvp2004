@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+header {
+    background-color: #fff;
+    border-bottom: 2px solid #D56600;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 102;
+}
+
+header .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #D56600;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    z-index: 101;
+}
+
+.icono-logo {
+    width: 28px;
+    height: 28px;
+}
+
+.menu-hamburguesa {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    z-index: 101;
+}
+
+.menu-hamburguesa span {
+    width: 25px;
+    height: 3px;
+    background-color: #D56600;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.menu-hamburguesa.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-hamburguesa.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-hamburguesa.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+.nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 20px 20px;
+    gap: 10px;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease;
+    z-index: 100;
+    overflow-y: auto;
+}
+
+.nav-menu.active {
+    right: 0;
+}
+
+.nav-menu a {
+    color: #333;
+    text-decoration: none;
+    padding: 12px 15px;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.nav-menu a:hover {
+    background-color: #FFF5EB;
+    color: #D56600;
+}
+
+.nav-menu .autenticacion {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.boton-iniciar-sesion {
+    color: #D56600;
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 1px solid #D56600;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.boton-iniciar-sesion:hover {
+    background-color: #FFF5EB;
+}
+
+.boton-registrarse {
+    background-color: #D56600;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.boton-registrarse:hover {
+    background-color: #B85500;
+}
+
+main {
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 8px;
+    color: #D56600;
+}
+
+.subtitulo {
+    color: #666;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.caja-busqueda {
+    width: 100%;
+    padding: 12px 16px;
+    margin-bottom: 25px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.caja-busqueda:focus {
+    outline: none;
+    border-color: #D56600;
+}
+
+.cuadricula-proyectos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.proyecto {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.proyecto:hover {
+    transform: translateY(-5px);
+}
+
+.proyecto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.proyecto h3 {
+    padding: 15px 15px 5px;
+    font-size: 17px;
+    color: #333;
+}
+
+.autor {
+    padding: 0 15px;
+    color: #666;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.barra-progreso {
+    margin: 15px;
+    height: 8px;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progreso {
+    height: 100%;
+    background-color: #D56600;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.plazo {
+    padding: 0 15px;
+    margin-bottom: 15px;
+    color: #666;
+    font-size: 14px;
+}
+
+.proyecto button {
+    width: calc(100% - 30px);
+    margin: 0 15px 15px;
+    padding: 10px;
+    background-color: #D56600;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.proyecto button:hover {
+    background-color: #B85500;
+}
+
+@media (min-width: 768px) {
+    .contenedor {
+        padding: 0 20px;
+    }
+
+    header {
+        padding: 15px 0;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .icono-logo {
+        width: 30px;
+        height: 30px;
+    }
+
+    .menu-hamburguesa {
+        display: none;
+    }
+
+    .nav-menu {
+        position: static;
+        width: auto;
+        height: auto;
+        flex-direction: row;
+        padding: 0;
+        box-shadow: none;
+        background-color: transparent;
+        gap: 15px;
+        align-items: center;
+        overflow-y: visible;
+    }
+
+    .nav-menu a {
+        padding: 5px 10px;
+        font-size: 15px;
+    }
+
+    .nav-menu a:hover {
+        background-color: transparent;
+    }
+
+    .nav-menu .autenticacion {
+        flex-direction: row;
+        margin-top: 0;
+        padding-top: 0;
+        border-top: none;
+    }
+
+    main {
+        padding: 25px 0;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .subtitulo {
+        font-size: 15px;
+    }
+
+    .cuadricula-proyectos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .proyecto h3 {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .logo {
+        font-size: 24px;
+    }
+
+    .icono-logo {
+        width: 32px;
+        height: 32px;
+    }
+
+    .nav-menu {
+        gap: 20px;
+    }
+
+    .nav-menu a {
+        font-size: 16px;
+    }
+
+    main {
+        padding: 30px 0;
+    }
+
+    h1 {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+
+    .subtitulo {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .caja-busqueda {
+        padding: 12px 20px;
+        margin-bottom: 30px;
+    }
+
+    .cuadricula-proyectos {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 25px;
+    }
+}

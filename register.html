@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Unidos - Registro</title>
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="css/register.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="contenedor-pagina">
+        <header class="encabezado">
+            <div class="contenedor-encabezado">
+                <div class="contenido-encabezado">
+                    <div class="nav-izquierda">
+                        <a class="enlace-logo" href="index.html">
+                            <img src="../resources/icon.png" alt="Unidos" class="icono-logo">
+                            <span class="texto-logo">Unidos</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="contenido-principal">
+            <div class="contenedor-registro">
+                <div>
+                    <h2 class="titulo-registro">Crea tu cuenta</h2>
+                    <p class="subtitulo-registro">
+                        ¿Ya tienes una cuenta?
+                        <a class="enlace-login" href="login.html">Iniciar sesión</a>
+                    </p>
+                </div>
+                <form action="#" class="formulario-registro" method="POST">
+                    <div>
+                        <label class="etiqueta-formulario" for="full-name">Nombre completo</label>
+                        <div class="contenedor-input">
+                            <input autocomplete="name" class="input-formulario" id="full-name" name="full-name"
+                                placeholder="Tu nombre" required="" type="text" />
+                        </div>
+                    </div>
+                    <div>
+                        <label class="etiqueta-formulario" for="email">Correo electrónico</label>
+                        <div class="contenedor-input">
+                            <input autocomplete="email" class="input-formulario" id="email" name="email"
+                                placeholder="tu@ejemplo.com" required="" type="email" />
+                            <p class="pista-input">El correo electrónico debe ser único.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="etiqueta-formulario" for="password">Contraseña</label>
+                        <div class="contenedor-input">
+                            <input autocomplete="new-password" class="input-formulario" id="password" name="password"
+                                placeholder="••••••••" required="" type="password" />
+                            <p class="pista-input">La contraseña debe tener al menos 6 caracteres.</p>
+                        </div>
+                    </div>
+                    <div class="seccion-enviar">
+                        <button class="boton-enviar" type="submit">Registrarse</button>
+                    </div>
+                    <div class="seccion-terminos">
+                        <p>
+                            Se enviará un enlace de confirmación a tu correo para activar tu cuenta. Al registrarte, aceptas nuestros
+                            <a class="enlace-terminos" href="#">Términos de Servicio</a>.
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>
