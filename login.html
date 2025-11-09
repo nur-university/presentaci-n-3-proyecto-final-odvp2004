@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Iniciar sesión - Unidos</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="css/login.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="contenedor-pagina">
+        <header class="encabezado">
+            <div class="contenedor-encabezado">
+                <div class="contenido-encabezado">
+                    <div class="nav-izquierda">
+                        <a class="enlace-logo" href="home.html">
+                            <img src="../resources/icon.png" alt="Unidos" class="icono-logo">
+                            <span class="texto-logo">Unidos</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="contenido-principal">
+            <div class="contenedor-login">
+                <div>
+                    <h2 class="titulo-login">Iniciar sesión en Unidos</h2>
+                </div>
+                <form action="#" class="formulario-login" method="POST">
+                    <div class="grupo-formulario">
+                        <div>
+                            <label class="sr-only" for="email-address">Correo electrónico</label>
+                            <input autocomplete="email" class="input-formulario input-superior"
+                                id="email-address" name="email" placeholder="Correo electrónico" required="" type="email" />
+                        </div>
+                        <div>
+                            <label class="sr-only" for="password">Contraseña</label>
+                            <input autocomplete="current-password" class="input-formulario input-inferior"
+                                id="password" name="password" placeholder="Contraseña" required="" type="password" />
+                        </div>
+                    </div>
+                    <div class="olvido-contrasena">
+                        <div>
+                            <a class="enlace-olvido" href="#">¿Olvidaste tu contraseña?</a>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="home.html">
+                            <button class="boton-enviar" type="button">
+                                Iniciar sesión
+                            </button>
+                        </a>
+                    </div>
+                    <div class="enlace-registro">
+                        <p>
+                            ¿No tienes una cuenta?
+                            <a class="ancla-registro" href="register.html">Regístrate</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>

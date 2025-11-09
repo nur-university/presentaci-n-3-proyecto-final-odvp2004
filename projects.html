@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyectos - Unidos</title>
+    <link href="css/projects.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <div class="contenedor">
+            <a class="logo" href="home.html">
+                <img src="../resources/icon.png" alt="Unidos" class="icono-logo">
+                Unidos
+            </a>
+            <button class="menu-hamburguesa" aria-label="Menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-menu">
+                <a href="home.html">Inicio</a>
+                <a href="projects.html">Explorar</a>
+                <a href="project-detail.html">Detalle de Proyecto</a>
+                <div class="autenticacion">
+                    <a class="boton-iniciar-sesion" href="login.html">Iniciar sesión</a>
+                    <a class="boton-registrarse" href="register.html">Registrarse</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <script>
+        const menuBtn = document.querySelector('.menu-hamburguesa');
+        const navMenu = document.querySelector('.nav-menu');
+
+        menuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            menuBtn.classList.toggle('active');
+        });
+    </script>
+
+    <main>
+        <div class="contenedor">
+            <h1>Explorar Proyectos</h1>
+            <p class="subtitulo">Encuentra y apoya los proyectos que te apasionan.</p>
+
+            <input class="caja-busqueda" type="text" placeholder="Buscar proyectos...">
+
+            <div class="cuadricula-proyectos">
+                <div class="proyecto">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuArbIOS0Lzx8eYKZG8rM7J7tB8heyL_9jmwglN0PrEp3qVET6TjKJ8ApelBnOAhfGOD8inMLhopnlvxQFSht5yRYJSW3-TSOrF4GcS6VrB1uGcUnB8w3u3HIai2e0d_SMma8VDJpONGWcP1imvBFbwrcTqQlQZylfO4grnppKR9DeoVLmfz5DASryxHnTyBeVLAUPj4kpLITpxLuPEcOfcTKlI8Mq1dyaK8x5-i0PzUZKpFs7Yh7-IImW_nP83rm7Nb4bgNrO1AIdo" alt="Proyecto">
+                    <h3>Proyecto de arte comunitario en el centro</h3>
+                    <p class="autor">Por John Doe</p>
+                    <div class="barra-progreso">
+                        <div class="progreso" style="width: 60%;"></div>
+                    </div>
+                    <div class="info">
+                        <span>60%</span>
+                        <span>$5,000</span>
+                    </div>
+                    <p class="plazo">Finaliza en 30 días</p>
+                    <a href="project-detail.html"><button>Ver detalles</button></a>
+                </div>
+
+                <div class="proyecto">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0YogpRzE7lnlLZpLyP1UNNDO-hWypblkaeJTlB2X_xGF28cvwH67DTT34ymbY052Tn4oVTISHyCPus2QgxhQ7UeSbwbZYDKAkvl3fv2km-9gOymqDmMbN-rWc_6kkXdWD4TwJF5Ok_WzJ8PlJTKEZgawxV7zVMACsbg6EVPLMWV_ASjwUsYIRbPKqoHQdq0H6f7Cckg3Uo2gmw8wAx2oaAYCjf19P1XbeBXS4CPYswjGMpP0I8ra4TbVcmp_b_FKKx2x868CraBM" alt="Proyecto">
+                    <h3>Documental sobre la vida silvestre local</h3>
+                    <p class="autor">Por Jane Smith</p>
+                    <div class="barra-progreso">
+                        <div class="progreso" style="width: 80%;"></div>
+                    </div>
+                    <div class="info">
+                        <span>80%</span>
+                        <span>$10,000</span>
+                    </div>
+                    <p class="plazo">Finaliza en 15 días</p>
+                    <button>Ver detalles</button>
+                </div>
+
+                <div class="proyecto">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFX3lyCUh4ojTszurVJTRXVfsXxnJjt0LSLapfyvPfF1ssZWWSzDaqldqfAGN6ZwKW-QQ7w2g2STzWfQmVeWOQ34jofytEDL_AOSiYK6d-jXjO464JlUUuClAOi2z8bhSq8IwkP1zgSe5xU6WrboPF1xHzcbKs_A9ojmaRGtaMaCYS8G39vo2YPE2dKyqpMwohMi5R-zwcltpBafhFGx5G9bkb_TrKdtiAVHxCQavK1ky1gUuaU5rmzS94-_OctX2nGveM6FPe4SU" alt="Proyecto">
+                    <h3>Campaña para apoyar a pequeños negocios</h3>
+                    <p class="autor">Por Community First</p>
+                    <div class="barra-progreso">
+                        <div class="progreso" style="width: 40%;"></div>
+                    </div>
+                    <div class="info">
+                        <span>40%</span>
+                        <span>$2,000</span>
+                    </div>
+                    <p class="plazo">Finaliza en 45 días</p>
+                    <button>Ver detalles</button>
+                </div>
+
+                <div class="proyecto">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2H7PnMDyAcedD3tbkcMKvd0Nd-uAENE0spd936uK0lbaGUOc54JX6uSRCGF2OWBOfiSWNJb-d1CtBN-mFI6NnhbqL8_F1T5Po2UoZLmt5cKUvuUJgCsUXWdnQ_0hnZzUR9sT25S2osXQXLyAs20F1AGv95HsssxTEguD9y-ohVcjD-LWolznlmFtzeUabsYrEy6iIvkY9Zf9YJCnbL7qSAsYacrwNoN9kxdKYNpYSFgOlPIqlAJYx133HbqxbuXyNlYuA1kqpDfU" alt="Proyecto">
+                    <h3>Iniciativa de reciclaje en la comunidad</h3>
+                    <p class="autor">Por Eco Warriors</p>
+                    <div class="barra-progreso">
+                        <div class="progreso" style="width: 90%;"></div>
+                    </div>
+                    <div class="info">
+                        <span>90%</span>
+                        <span>$3,000</span>
+                    </div>
+                    <p class="plazo">Finaliza en 10 días</p>
+                    <button>Ver detalles</button>
+                </div>
+
+                <div class="proyecto">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJPJoTCho1TLCe5F-DzPjFr4YyXu9aTyj_F8pQ76byHyj2P3B4rdvf2ZIrjzCZ-1GmMCn5pnN2SN86WFj7WeiOmqdOcaP0pCyBvzli-foTNEdGzKwIcLVxMU3GxHI2BD_rLR79J9mBK32f3WGbjfQicPDhPpjib7GTEmBrgM9zl03BDgZoaBGcaPdPkpWA3prv64_1-dALaHOAklGE-02vgBnPUezHf-S3wYhIOFq22FLshj_m9g3gTDDbuCF91N8YIFob5c8EeeI" alt="Proyecto">
+                    <h3>Fondo para la investigación médica</h3>
+                    <p class="autor">Por Hope Foundation</p>
+                    <div class="barra-progreso">
+                        <div class="progreso" style="width: 20%;"></div>
+                    </div>
+                    <div class="info">
+                        <span>20%</span>
+                        <span>$15,000</span>
+                    </div>
+                    <p class="plazo">Finaliza en 60 días</p>
+                    <button>Ver detalles</button>
+                </div>
+
+                <div class="proyecto">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCY_jEOX_tRD97tMEdWEqBstWdmDJwMxVNRBdXLYGz63ui37a6tB7MwSHkY7bVW_tRAvcvi_5AcQP84fF1AgjDLHE5oTX-PDM5uN-2dtwTeHW8N2Ug2y6jrsMb4fckrsHGmHb-raJETZHNnE60v7nNFKxN4LI4r2d_3D-qx8WMlt5mhC7A3PD6BxzwyCZzreui3Pq5oLZ9-IvkEpfa6Qwn_jhzrXEzMK5iuQKbfb7bz3liZ48oXhlWcUNqrXsC94Nuda7oNk7XQmqk" alt="Proyecto">
+                    <h3>Campaña de ayuda para desastres naturales</h3>
+                    <p class="autor">Por Relief Now</p>
+                    <div class="barra-progreso">
+                        <div class="progreso" style="width: 70%;"></div>
+                    </div>
+                    <div class="info">
+                        <span>70%</span>
+                        <span>$8,000</span>
+                    </div>
+                    <p class="plazo">Finaliza en 20 días</p>
+                    <button>Ver detalles</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
