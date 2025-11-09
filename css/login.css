@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f6f7f8;
+    font-family: 'Work Sans', sans-serif;
+    color: #111518;
+    font-size: 16px;
+}
+
+.contenedor-pagina {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.encabezado {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    background-color: rgba(246, 247, 248, 0.8);
+    backdrop-filter: blur(4px);
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.contenedor-encabezado {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.contenido-encabezado {
+    display: flex;
+    height: 4rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-izquierda {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.enlace-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #D56600;
+    text-decoration: none;
+}
+
+.icono-logo {
+    height: 2rem;
+    width: 2rem;
+    color: #D56600;
+}
+
+.texto-logo {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #D56600;
+}
+
+.contenido-principal {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 1rem;
+}
+
+.contenedor-login {
+    width: 100%;
+    max-width: 28rem;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    border: 1px solid #e4e9ee;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.titulo-login {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    color: #111518;
+    margin-bottom: 1.5rem;
+}
+
+.formulario-login {
+    margin-top: 2rem;
+}
+
+.grupo-formulario {
+    border-radius: 0.375rem;
+    margin-bottom: 1.5rem;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.input-formulario {
+    position: relative;
+    display: block;
+    width: 100%;
+    appearance: none;
+    border: 1px solid #e4e9ee;
+    background-color: #f6f7f8;
+    padding: 0.75rem;
+    color: #111518;
+    font-size: 0.875rem;
+}
+
+.input-formulario::placeholder {
+    color: #a0b3c1;
+}
+
+.input-formulario:focus {
+    z-index: 10;
+    border-color: #D56600;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(17, 131, 212, 0.2);
+}
+
+.input-superior {
+    border-radius: 0.5rem 0.5rem 0 0;
+    border-bottom: none;
+}
+
+.input-inferior {
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.olvido-contrasena {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 1.5rem;
+}
+
+.enlace-olvido {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #D56600;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.enlace-olvido:hover {
+    opacity: 0.8;
+}
+
+.boton-enviar {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    border-radius: 0.5rem;
+    border: 1px solid transparent;
+    background-color: #D56600;
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.boton-enviar:hover {
+    opacity: 0.9;
+}
+
+.boton-enviar:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(17, 131, 212, 0.5);
+}
+
+.enlace-registro {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.enlace-registro p {
+    font-size: 0.875rem;
+    color: #647584;
+}
+
+.ancla-registro {
+    font-weight: 500;
+    color: #D56600;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.ancla-registro:hover {
+    opacity: 0.8;
+}
+
+@media (min-width: 640px) {
+    .contenido-principal {
+        padding: 3rem 1.5rem;
+    }
+
+    .contenedor-login {
+        padding: 2rem;
+    }
+
+    .titulo-login {
+        font-size: 1.875rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .contenido-principal {
+        padding: 3rem 2rem;
+    }
+}

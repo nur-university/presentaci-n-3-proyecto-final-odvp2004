@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f6f7f8;
+    font-family: 'Work Sans', sans-serif;
+    color: #1f2937;
+    font-size: 16px;
+}
+
+.contenedor-pagina {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.encabezado {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    background-color: rgba(246, 247, 248, 0.8);
+    backdrop-filter: blur(4px);
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.contenedor-encabezado {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.contenido-encabezado {
+    display: flex;
+    height: 4rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-izquierda {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.enlace-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #D56600;
+    text-decoration: none;
+}
+
+.icono-logo {
+    height: 2rem;
+    width: 2rem;
+    color: #D56600;
+}
+
+.texto-logo {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #D56600;
+}
+
+.contenido-principal {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 1rem;
+}
+
+.contenedor-registro {
+    width: 100%;
+    max-width: 28rem;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.titulo-registro {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    color: #111518;
+}
+
+.subtitulo-registro {
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 0.875rem;
+    color: #4b5563;
+}
+
+.enlace-login {
+    font-weight: 500;
+    color: #D56600;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.enlace-login:hover {
+    opacity: 0.9;
+}
+
+.formulario-registro {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.etiqueta-formulario {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #374151;
+}
+
+.contenedor-input {
+    margin-top: 0.25rem;
+}
+
+.input-formulario {
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    background-color: #f9fafb;
+    color: #111518;
+    font-size: 0.875rem;
+}
+
+.input-formulario::placeholder {
+    color: #a0b3c1;
+}
+
+.input-formulario:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(17, 131, 212, 0.5);
+    border-color: transparent;
+}
+
+.pista-input {
+    margin-top: 0.5rem;
+    font-size: 0.75rem;
+    color: #6b7280;
+}
+
+.seccion-enviar {
+    padding-top: 0.5rem;
+}
+
+.boton-enviar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0.75rem 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: white;
+    background-color: #D56600;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.boton-enviar:hover {
+    opacity: 0.9;
+}
+
+.boton-enviar:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(17, 131, 212, 0.5);
+}
+
+.seccion-terminos {
+    text-align: center;
+    font-size: 0.75rem;
+    color: #6b7280;
+    padding-top: 0.5rem;
+}
+
+.enlace-terminos {
+    font-weight: 500;
+    color: #D56600;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.enlace-terminos:hover {
+    opacity: 0.9;
+}
+
+@media (min-width: 640px) {
+    .contenido-principal {
+        padding: 3rem 1.5rem;
+    }
+
+    .contenedor-registro {
+        padding: 2.5rem;
+    }
+
+    .titulo-registro {
+        font-size: 1.875rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .contenido-principal {
+        padding: 3rem 2rem;
+    }
+
+    .contenedor-registro {
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    }
+}
